@@ -4,7 +4,7 @@
 print("[VCMod - Explosion] Script started")
 
 -- When a vehicle explodes
-hook.Add("VC_engineExploded", "CustomHookName", function(ent, silent)
+hook.Add("VC_engineExploded", "SpawnFireOnVehicle", function(ent, silent)
 	print("[VCMod - Explosion] Vehicle set on fire: "..ent:VC_getName()..".")
 	ent:Ignite(2)
 end)
